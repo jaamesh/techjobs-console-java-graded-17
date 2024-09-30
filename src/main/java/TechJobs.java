@@ -86,6 +86,7 @@ public class TechJobs {
             i++;
         }
 
+        //System.out.println("\n");
         do {
 
             System.out.println("\n" + menuHeader);
@@ -114,6 +115,7 @@ public class TechJobs {
                 validChoice = true;
             }
 
+            //System.out.println("\nhiend");
         } while(!validChoice);
 
         return choiceKeys[choiceIdx];
@@ -138,11 +140,11 @@ public class TechJobs {
         jobsOutput.setLength(jobsOutput.length() - 1);
 
         if (someJobs.size() == 0) {
-            System.out.println("No Results from println.");
-            //jobsOutput.append("No Results");
+            jobsOutput.append("No Results");
         } else {
-            System.out.println(jobsOutput.toString());
+            jobsOutput.setLength(jobsOutput.length() - 1);
         }
+        System.out.println(jobsOutput.toString());
 
     }
 }
